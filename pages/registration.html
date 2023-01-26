@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/registration_style.css">
+    <link rel="shortcut icon" href="../assets/img/mdhl_logo.png" type="image/x-icon">
+    <title>Registration Form - MDHL</title>
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <div class="icon_container"><img src="../assets/img/menu.png" alt=""></div>
+            <nav class="nav_container">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./aboutMDHL.html">About MDHL</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="./gameInfo.html">Game Information</a></li>
+                    <li><a href="./rules.html">Rules</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <a href="../index.html"><div class="container_logo">
+            <img src="../assets/img/mdhl_logo.png" alt="">
+        </div></a>
+    </header>
+    <main>
+        <div class="container_title">
+            <h1>Registration <span>- Player's Information</span></h1>
+        </div>
+        <section class="comming_events_container">
+            <form class="comming_events_item">
+                <label for="first_name">First Name:<input type="text" name="first_name" id="first_name"></label>
+                <label for="last_name">Last Name:<input type="text" name="last_name" id="last_name"></label>
+                <label for="strt_address">Strt Address:<input type="text" name="strt_address" id="strt_address"></label>
+                <label for="city" class="half_label">City:<input type="text" name="city" id="city"></label>
+                <label for="zip_code" class="half_label">Zip Code:<input type="text" name="zip_code" id="zip_code"></label>
+                <label for="birth_date" class="half_label">Birth Date:<input type="date" name="birth_date" id="birth_date"></label>
+                <label for="gender" class="half_label">Gender: <select name="gender" id="gender">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Non-binary">Non-binary</option>
+                    <option value="N/A">N/A</option>
+                </select></label>
+                <label for="guardian_name">Parent/Guarrdian Name:<input type="text" name="guardian_name" id="guardian_name"></label>
+                <label for="contect_phone">Contact Phone:<input type="tel" name="contect_phone" id="contect_phone"></label>
+                <label for="e-mail">E-mail:<input type="email" name="e-mail" id="e-mail"></label>
+                <p>Which elementary schools do you live near?</p>
+                <label for="first_school" class="half_label">First School: <select name="first_school" id="first_school">
+                    <option value="katzenmaier">AJ Katzenmaier</option>
+                    <option value="greenbay">Greenbay</option>
+                    <option value="yeager">Howard A Yeager</option>
+                    <option value="hart">Marjorie P Hart</option>
+                    <option value="north">North Elementary</option>
+                    <option value="south">South Elementary</option>
+                </select></label>
+                <label for="second_school" class="half_label">Second School: <select name="second_school" id="second_school">
+                    <option value="katzenmaier">AJ Katzenmaier</option>
+                    <option value="greenbay">Greenbay</option>
+                    <option value="yeager">Howard A Yeager</option>
+                    <option value="hart">Marjorie P Hart</option>
+                    <option value="north">North Elementary</option>
+                    <option value="south">South Elementary</option>
+                </select></label>
+                <div class="button_container">
+                    <button>Cancel</button>
+                    <button>Next</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container_logo">
+            <img src="/assets/img/mdhl_logo.png" alt="">
+        </div>
+    </footer>
+</body>
+<script src="../js/menu_buttom.js"></script>
+</html>

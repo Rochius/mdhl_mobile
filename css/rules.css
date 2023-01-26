@@ -1,0 +1,27 @@
+.title_section{
+    text-align: center
+}
+main{
+    position: relative;
+}
+.arrow_btn{
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    width: 56px;
+}
+
+.arrow_btn img{
+    width: 100%;
+}
+
+.shortcuts_title{
+    font-size: 0.75rem;
+}
+
+.arrow_shortcut{
+    height: 0.75rem;
+    margin-left: 1rem;
+    filter: invert(100);
+}

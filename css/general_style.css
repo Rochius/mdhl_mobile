@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0%;
+    text-decoration: none;
+    color: #eeeeed;
+    border: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    background-color: #eeeeed;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #60cab0;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+main{
+    min-height: calc(100% - 115px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+footer{
+    background-color: #60cab0;
+    width: 100%;
+    height: 56px;
+    position: relative;
+}
+
+/* .prueba{
+    width: 100%;
+    height: 800px;
+} */
+
+.icon_container{
+    height: 100%;
+    width: 56px;
+    position: relative;
+}
+
+.icon_container img{
+    width: calc(100% - 32px);
+    margin: 16px;
+}
+
+.icon_container img:hover{
+    cursor: pointer;
+    color: #eeeeed;
+    transition: 500ms;
+}
+
+.container_logo{
+    height: 100%;
+    width: 56px;
+    position: absolute;
+    left: calc(50% - 28px);
+}
+.container_logo img{
+    height: calc(100% - 20px);
+    margin: 10px;
+}
+
+.nav_container{
+    width: 100%;
+    background-color: #46a890;
+    position: absolute;
+    top: 56px;
+    border-top: solid 2.5px #123729;
+}
+/* #46a890 */
+.nav_container ul li{
+    height: 1rem;
+    padding: 0.5rem;
+    background-color: #46a890;
+    color: #eeeeed;
+}
+.nav_container ul li:nth-child(even){
+    background-color: #60cab0;
+}
+
+.container_title{
+    width: 300px;
+    min-width: 180px;
+    margin-top: 1.5rem;
+    padding: 0.25rem;
+    background-color: #211915;
+    border-radius: 0px 200px 200px 0px;
+    display: flex;
+}
+
+.container_title h1{
+    min-width: 180px;
+    font-size: 1.5rem;
+    color: #eeeeed;
+    padding-left: 0.5rem;;
+}
+
+.comming_events_container{
+    width: calc(100% - 3rem);
+    margin: 1rem;
+    padding: 0.5rem;
+    border: solid 3px #123729;
+    border-style: dashed;
+    border-radius: 1rem;
+}
+
+.comming_events_item{
+ width: calc(100% - 2rem);
+ background-color: #211915;
+ padding: 1rem;
+ margin-bottom: 1rem;
+ border-radius: 1rem;
+}
+
+.comming_events_item:last-child{
+    margin: 0;
+}
+
+.comming_events_item h2{
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+    margin-bottom: 0.5rem;
+}
+
+.comming_events_item p{
+    color: #eeeeed;
+}
+
+.animationMenuContainerOut{
+    z-index: -2;
+    animation: MenuContainerOut ease-in 1s;
+}
+
+@keyframes MenuContainerOut {
+    0%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(-100%);
+    }
+    100%{
+        display: none;
+    }
+}
+
+.animationMenuContainerin{
+    z-index: -2;
+    animation: MenuContainerIn ease-in 1s;
+}
+
+@keyframes MenuContainerIn {
+    0%{
+        transform: translateY(-100%);
+    }
+    25%{
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    main{
+        min-height: calc(100% - 115px - 1rem);
+    }
+    header{
+        margin-bottom: 2rem;
+    }
+
+    .container_logo{
+        left: 28px;
+    }
+
+    .header_title{
+        display: inline !important;
+        margin: auto 6rem;
+        font-style: italic;
+    }
+
+    .icon_container{
+        display: none;
+    }
+    .nav_container{
+        display: inline;
+    }
+    .nav_container ul{
+        display: flex;
+        margin: 0 1rem;
+        justify-content: space-between;
+    }
+
+    .nav_container ul li{
+        width: 17%;
+        text-align: center;
+        padding: 0.5rem 0;
+        background-color: transparent !important;
+    }
+
+    .nav_container ul li a:hover{
+        text-shadow: -1px 1px 17px rgb(210, 228, 223);
+        color: #123729;
+        transform: scale(1.3);
+        transition: 500ms;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    header{
+        height: 150px;
+    }
+    .header_title{
+        margin: auto 13rem;
+    }
+    .nav_container{
+        width: 100%;
+        background-color: #46a890;
+        position: absolute;
+        top: 150px;
+        border-top: solid 2.5px #123729;
+    }
+}

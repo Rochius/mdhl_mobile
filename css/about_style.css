@@ -1,0 +1,8 @@
+.dropdown_button{
+    width: 24px;
+}
+
+.dropdown_button img{
+    width: 100%;
+    filter: invert(94%) sepia(93%) saturate(7500%) hue-rotate(357deg) brightness(105%) contrast(103%);
+}

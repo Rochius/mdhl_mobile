@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/registration_style.css">
+    <link rel="shortcut icon" href="../assets/img/mdhl_logo.png" type="image/x-icon">
+    <title>Registration Form - MDHL</title>
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <div class="icon_container"><img src="../assets/img/menu.png" alt=""></div>
+            <nav class="nav_container">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./aboutMDHL.html">About MDHL</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="./gameInfo.html">Game Information</a></li>
+                    <li><a href="./rules.html">Rules</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <a href="../index.html"><div class="container_logo">
+            <img src="../assets/img/mdhl_logo.png" alt="">
+        </div></a>
+    </header>
+    <main>
+        <div class="container_title">
+            <h1>Registration <span>- League Information</span></h1>
+        </div>
+        <section class="comming_events_container">
+            <form class="comming_events_item">
+                <fieldset class="comming_events_item">
+                    <legend class="form_legend">What position(s) do you normally play?</legend>
+                    <label for="n_forward" class="half_label checkbox">Forward <input type="checkbox" name="n_forward" id="n_forward"></label>
+                    <label for="n_defense" class="half_label checkbox">Defense <input type="checkbox" name="n_defense" id="n_defense"></label>
+                    <label for="n_midfield" class="half_label checkbox">Midfield <input type="checkbox" name="n_midfield" id="n_midfield"></label>
+                    <label for="n_goalkeep" class="half_label checkbox">Goalkeep <input type="checkbox" name="n_goalkeep" id="n_goalkeep"></label>
+                </fieldset>
+                <fieldset class="comming_events_item">
+                    <legend class="form_legend">What position(s) do you want to play?</legend>
+                    <label for="w_forward" class="half_label checkbox">Forward <input type="checkbox" name="w_forward" id="w_forward"></label>
+                    <label for="w_defense" class="half_label checkbox">Defense <input type="checkbox" name="w_defense" id="w_defense"></label>
+                    <label for="w_midfield" class="half_label checkbox">Midfield <input type="checkbox" name="w_midfield" id="w_midfield"></label>
+                    <label for="w_goalkeep" class="half_label checkbox">Goalkeep <input type="checkbox" name="w_goalkeep" id="w_goalkeep"></label>
+                </fieldset>
+                <fieldset class="comming_events_item">
+                    <div class="uniform">
+                        <legend class="form_legend">Uniform:</legend>
+                        <label for="w_forward" class="checkbox">Already Have a Uniform <input type="checkbox" name="w_forward" id="w_forward"></label>
+                    </div>
+                    <label for="jersey_size" class="half_label">First School: <select name="jersey_size" id="jersey_size">
+                        <option value="j_y_small">Youth Small</option>
+                        <option value="j_y_medium">Youth Medium</option>
+                        <option value="j_y_large">Youth Large</option>
+                        <option value="j_small">Small</option>
+                        <option value="j_medium">Medium</option>
+                        <option value="j_large">Large</option>
+                        <option value="j_x_large">Extra-Large</option>
+                    </select></label>
+                    <label for="short_size" class="half_label">Second School: <select name="short_size" id="short_size">
+                        <option value="s_y_small">Youth Small</option>
+                        <option value="s_y_medium">Youth Medium</option>
+                        <option value="s_y_large">Youth Large</option>
+                        <option value="s_small">Small</option>
+                        <option value="s_medium">Medium</option>
+                        <option value="s_large">Large</option>
+                        <option value="s_x_large">Extra-Large</option>
+                    </select></label>
+                </fieldset>
+                <div class="button_container">
+                    <button>Back</button>
+                    <button>Next</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container_logo">
+            <img src="/assets/img/mdhl_logo.png" alt="">
+        </div>
+    </footer>
+</body>
+<script src="../js/menu_buttom.js"></script>
+</html>
