@@ -61,3 +61,17 @@ table thead{
 .map_container h3{
     text-align: center;
 }
+
+@media screen and (min-width: 992px) {
+    .table_container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .table_container h2, .table_container p{
+        width: 100%;
+    }
+    .table_container table{
+        width: 45%;
+    }
+}

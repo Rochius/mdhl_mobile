@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" sizes="128x128" href="./assets/img/mdhl_logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/mdhl_logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +24,7 @@
     <header>
         <section class="menu">
             <div class="icon_container"><img src="../assets/img/menu.png" alt=""></div>
-            <nav class="nav_container">
+            <nav class="nav_container hide">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./aboutMDHL.html">About MDHL</a></li>
@@ -30,6 +38,7 @@
         <a href="../index.html"><div class="container_logo">
             <img src="../assets/img/mdhl_logo.png" alt="">
         </div></a>
+        <h1 class="header_title hide">Mighty Ducks Hockey League</h1>
     </header>
     <main>
         <div class="container_title">
@@ -37,14 +46,14 @@
         </div>
         <section class="comming_events_container">
             <form class="comming_events_item">
-                <fieldset class="comming_events_item">
+                <fieldset class="comming_events_item position">
                     <legend class="form_legend">What position(s) do you normally play?</legend>
                     <label for="n_forward" class="half_label checkbox">Forward <input type="checkbox" name="n_forward" id="n_forward"></label>
                     <label for="n_defense" class="half_label checkbox">Defense <input type="checkbox" name="n_defense" id="n_defense"></label>
                     <label for="n_midfield" class="half_label checkbox">Midfield <input type="checkbox" name="n_midfield" id="n_midfield"></label>
                     <label for="n_goalkeep" class="half_label checkbox">Goalkeep <input type="checkbox" name="n_goalkeep" id="n_goalkeep"></label>
                 </fieldset>
-                <fieldset class="comming_events_item">
+                <fieldset class="comming_events_item position">
                     <legend class="form_legend">What position(s) do you want to play?</legend>
                     <label for="w_forward" class="half_label checkbox">Forward <input type="checkbox" name="w_forward" id="w_forward"></label>
                     <label for="w_defense" class="half_label checkbox">Defense <input type="checkbox" name="w_defense" id="w_defense"></label>
@@ -54,7 +63,7 @@
                 <fieldset class="comming_events_item">
                     <div class="uniform">
                         <legend class="form_legend">Uniform:</legend>
-                        <label for="w_forward" class="checkbox">Already Have a Uniform <input type="checkbox" name="w_forward" id="w_forward"></label>
+                        <label for="w_forward" class="checkbox checkbox_uniform">Already Have a Uniform <input type="checkbox" name="w_forward" id="w_forward"></label>
                     </div>
                     <label for="jersey_size" class="half_label">First School: <select name="jersey_size" id="jersey_size">
                         <option value="j_y_small">Youth Small</option>
@@ -76,8 +85,8 @@
                     </select></label>
                 </fieldset>
                 <div class="button_container">
-                    <button>Back</button>
-                    <button>Next</button>
+                    <button><a href="./registration.html">Back</a></button>
+                    <button><a href="./registration_parent_permission.html">Next</a></button>
                 </div>
             </form>
         </section>

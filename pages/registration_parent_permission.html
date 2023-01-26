@@ -16,9 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/general_style.css">
-    <link rel="stylesheet" href="../css/about_style.css">
+    <link rel="stylesheet" href="../css/registration_style.css">
     <link rel="shortcut icon" href="../assets/img/mdhl_logo.png" type="image/x-icon">
-    <title>About us - MDHL</title>
+    <title>Registration Form - MDHL</title>
 </head>
 <body>
     <header>
@@ -27,8 +27,8 @@
             <nav class="nav_container hide">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">About MDHL</a></li>
-                    <li><a href="./registration.html">Registration</a></li>
+                    <li><a href="./aboutMDHL.html">About MDHL</a></li>
+                    <li><a href="#">Registration</a></li>
                     <li><a href="./gameInfo.html">Game Information</a></li>
                     <li><a href="./rules.html">Rules</a></li>
                     <li><a href="./contact.html">Contact</a></li>
@@ -42,21 +42,26 @@
     </header>
     <main>
         <div class="container_title">
-            <h1>About MDHL</h1>
+            <h1>Registration <span>- Parents Permission</span></h1>
         </div>
         <section class="comming_events_container">
-            <article class="comming_events_item">
-                <h2>Mision<span class="dropdown_button hide"><img src="../assets/img/down-arrow.png" alt=""></span></h2>
-                <p>To support young athletes living in Chicago's northside neighborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skills related to the game of soccer, specifically those skills around team cooperation and good sportsmanship.</p>
-            </article>
-            <article class="comming_events_item">
-                <h2>Vision<span class="dropdown_button hide"><img src="../assets/img/down-arrow.png" alt=""></span></h2>
-                <p>The Mighty Ducks Hockey League aspires to develop strong, well-rounded, and mindful athletes through the building of character, self-discipline, and leadership.</p>
-            </article>
-            <article class="comming_events_item">
-                <h2>General Information<span class="dropdown_button hide"><img src="../assets/img/down-arrow.png" alt=""></span></h2>
-                <p>The Mighty Ducks Hockey League was established in 1996 to provide athletes residing in Chicago's northside neighborhoods an environment in which to learn and play soccer. To be a member of MDHL, you must be between the ages of 4 - 12 and reside in a Chicago northside neighborhood. MDHL is run by a small full-time staff, and relies on the generous volunteer time of parents and previous league members.</p>
-            </article>
+            <form class="comming_events_item">
+                <div class="comming_events_item">
+                    <h3>Permission to Play</h3>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with soccer and in consideration for the "League" accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the program and/or being transported to or from MDHL sponsored activities, which transportation.</p>
+                    <p>By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                </div>
+                <fieldset class="comming_events_item">
+                    <label for="parent_signature" class="half_label">Parent/Guardian Signature: <input name="parent_signature" id="parent_signature">
+                    </input></label>
+                    <label for="date_signature" class="half_label">Date: <input type="date" name="date_signature" id="date_signature">
+                    </input></label>
+                </fieldset>
+                <div class="button_container">
+                    <button><a href="./registration.html">Back</a></button>
+                    <button>Submit</button>
+                </div>
+            </form>
         </section>
     </main>
     <footer>

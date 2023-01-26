@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" sizes="128x128" href="./assets/img/mdhl_logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/mdhl_logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/mdhl_logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/general_style.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="shortcut icon" href="../assets/img/mdhl_logo.png" type="image/x-icon">
     <title>About us - MDHL</title>
 </head>
@@ -15,7 +24,7 @@
     <header>
         <section class="menu">
             <div class="icon_container"><img src="../assets/img/menu.png" alt=""></div>
-            <nav class="nav_container">
+            <nav class="nav_container hide">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="./aboutMDHL.html">About MDHL</a></li>
@@ -29,23 +38,37 @@
         <a href="../index.html"><div class="container_logo">
             <img src="../assets/img/mdhl_logo.png" alt="">
         </div></a>
+        <h1 class="header_title hide">Mighty Ducks Hockey League</h1>
     </header>
     <main>
         <div class="container_title">
-            <h1>About MDHL</h1>
+            <h1>Contact us</h1>
         </div>
         <section class="comming_events_container">
-            <article class="comming_events_item">
-                <h2>August 4</h2>
-                <p>MDHL Fundraiser</p>
-            </article>
-            <article class="comming_events_item">
-                <h2>August 16</h2>
-                <p>Season Kick-off: Meet the Teams</p>
-            </article>
-            <article class="comming_events_item">
-                <h2>September 1</h2>
-                <p>First Game of the Season (Check Game Schedule for details)</p>
+            <article class="comming_events_item contact_container">
+                <h2>Get in touch!</h2>
+                <div>
+                    <p>For more info please email us at:</p>
+                    <a href="mailto:mdhl@chihockey.org" class="link_email">mdhl@chihockey.org</a>
+                    <p>We will reply to your email as soon as we can.</p>
+                    <p>Also you can follow us in our social media!</p>
+                    <ul class="container_social">
+                        <li>
+                            <a href="#"><img src="../assets/img/logoFacebook.png" alt="Logo Facebook" class="logo_social"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/img/logoIntagram.png" alt="Logo Instagram" class="logo_social"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../assets/img/logoTwitter.png" alt="Logo Twitter" class="logo_social"></a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contact_form">
+                    <input type="text" placeholder="Email" class="form_imput">
+                    <textarea placeholder="Messege" class="form_imput"></textarea>
+                    <input type="submit" value="Send" class="form_imput__submit">
+                </form>
             </article>
         </section>
     </main>
